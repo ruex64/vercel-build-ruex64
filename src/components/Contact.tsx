@@ -29,7 +29,7 @@ const Contact = () => {
           className="flex flex-col gap-6 font-mono"
         >
           <input type="hidden" name="_captcha" value="false" />
-          <input type="hidden" name="_next" value="http://localhost:3000" />
+          <input type="hidden" name="_next" value="https://ruex64.vercel.app/" />
 
           <input
             type="text"
