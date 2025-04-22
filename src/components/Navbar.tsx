@@ -16,14 +16,9 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-black bg-opacity-80 backdrop-blur-md shadow-md">
       <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-      <Link href="/">
-
-        <h1
-          className="text-white text-xl sm:text-2xl"
-          style={{ fontFamily: '"Press Start 2P", cursive' }}
-        >
+        <Link href="/" className="text-white text-xl sm:text-2xl" style={{ fontFamily: '"Press Start 2P", cursive' }}>
           Ruex64
-        </h1></Link>
+        </Link>
 
         <ul className="flex gap-4 sm:gap-6 text-xs sm:text-sm text-gray-300">
           {navItems.map((item, index) => (
@@ -33,12 +28,12 @@ export default function Navbar() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 * index }}
             >
-              <a
+              <Link
                 href={item.href}
                 className="hover:text-blue-400 transition-colors duration-300"
               >
                 {item.label}
-              </a>
+              </Link>
             </motion.li>
           ))}
         </ul>
