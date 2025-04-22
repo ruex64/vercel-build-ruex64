@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 const navItems = [
   { label: 'About', href: '#about' },
@@ -15,13 +16,14 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-black bg-opacity-80 backdrop-blur-md shadow-md">
       <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-        <a href="/">
+      <Link href="/">
+
         <h1
           className="text-white text-xl sm:text-2xl"
           style={{ fontFamily: '"Press Start 2P", cursive' }}
         >
           Ruex64
-        </h1></a>
+        </h1></Link>
 
         <ul className="flex gap-4 sm:gap-6 text-xs sm:text-sm text-gray-300">
           {navItems.map((item, index) => (
